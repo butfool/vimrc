@@ -1,0 +1,153 @@
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" Extensions For IdeaVim
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+map Q gq " Don't use Ex mode, use Q for formatting.
+
+
+
+" 设置剪切板
+set clipboard^=unamed,unnamedplus
+
+"" 设置英文模式
+" set keep-english-in-normal-and-restore-in-insert
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+" Leader
+let mapleader = " "
+
+
+"" VIM 基础属性设置 =====================================
+" 设置序号表示
+set rnu
+set nu
+
+" Search
+set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+
+" plugins
+set easymotion
+set surround
+set multiple-cursors
+set NERDTree
+
+" basic key mapping
+nnoremap L $
+nnoremap H ^
+vnoremap L $
+vnoremap H ^
+nnoremap ; :
+
+" Clear the highlighted search result
+nnoremap <leader>sc :nohlsearch<CR>
+
+
+" Fast move half page
+nnoremap <leader>d <C-d>
+nnoremap <leader>u <C-u>
+
+
+" Window Operations
+nnoremap <leader>ww <C-W>w
+nnoremap <leader>wd <C-W>c
+nnoremap <leader>wj <C-W>j
+nnoremap <leader>wk <C-W>k
+nnoremap <leader>wh <C-W>h
+nnoremap <leader>wl <C-W>l
+nnoremap <leader>ws <C-W>s
+nnoremap <leader>w- <C-W>s
+noremap <leader>wv <C-W>v
+nnoremap <leader>w\| <C-W>v
+
+" Copy and paste
+noremap <leader>y "*y
+noremap <leader>p "*p
+noremap <leader>P "0p
+
+
+
+
+
+
+" Tab operation
+nnoremap tn gt
+nnoremap tp gT
+
+" Insert mode short cut
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-d> <Delete>
+
+" IDEA built int key map
+" :actionlist
+
+
+" navigation
+
+
+" code actions
+nnoremap U :action FindUsages<CR>
+nnoremap R :action RenameElement<CR>
+nnoremap == :action ReformatCode<CR>
+nnoremap cc :action CommentByLineComment<CR>
+vnoremap cc :action CommentByLineComment<CR>
+noremap nj :action NewClass<CR>
+nnoremap <leader>sw :action SurroundWith<CR>
+nnoremap <leader><leader>pp \"1dGo<ESC>p%
+
+"===================
+"# Goto SomeWhere
+"===================
+
+"## 和文件有关的位置
+nnoremap gr :<C-u>action RecentFiles<CR>
+
+"## 和 Java 语言有关的位置
+nnoremap gd :<C-u>action GotoDeclaration<CR>
+nnoremap gi :<C-u>action GotoImplementation<CR>
+nnoremap gc :<C-u>action GotoClass<CR>
+nnoremap gu :<C-u>action ShowUsages<CR> " 被用到的位置
+nnoremap gs :<C-u>action GotoSuperMethod<CR>
+nnoremap gt :<C-u>action GotoTest<CR> " 去测试文件
+
+"## 和编辑有关的位置
+nnoremap gb :<C-u>action JumpToLastChange<CR>
+nmap ge <action>(GotoNextError)
+
+" nnoremap ga :<C-u>action GotoAction<CR>
+" nnoremap gf :<C-u>action GotoFile<CR>
+" nnoremap gm :<C-u>action GotoSymbol<CR>
+" nnoremap gp :<C-u>action FindInPath<CR>
+" nnoremap gh :<C-u>action Back<CR>
+" nnoremap gl :<C-u>action Forward<CR>
+
+
+
+
+
+
