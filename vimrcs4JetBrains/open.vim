@@ -1,0 +1,17 @@
+" Description: Open Windows Or Popup Tools
+" Namespace: <leader>o*, <leader>t*
+
+
+" Description: open functional windows
+" Namespace: <leader>o*
+nnoremap <leader>oa :action Annotate<CR>
+nnoremap <leader>os :action ActivateStructureToolWindow<CR>
+nnoremap <leader>ot :action ActivateTODOToolWindow<CR>
+nnoremap <leader>op :action ActivateProjectToolWindow<CR>
+nnoremap <leader>oc :action HideActiveWindow<CR>
+nnoremap <leader>or :<C-u>action RecentFiles<CR>
+nnoremap <leader>ou :<C-u>action FindUsages<CR>
+
+" Description: open functional popup tools
+" Namespace: <leader>t*
+nnoremap <leader>tcn :action CopyReferencePopupGroup<CR>

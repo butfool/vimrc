@@ -2,6 +2,8 @@
 set rnu
 set nu
 
+let leader = " "
+
 "" Search
 set hlsearch
 set incsearch
