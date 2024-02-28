@@ -5,7 +5,6 @@
 " Description: open functional windows
 " Namespace: <leader>o*
 nnoremap <leader>oa :action Annotate<CR>
-nnoremap <leader>os :action ActivateStructureToolWindow<CR>
 nnoremap <leader>ot :action ActivateTODOToolWindow<CR>
 nnoremap <leader>op :action ActivateProjectToolWindow<CR>
 nnoremap <leader>oc :action HideActiveWindow<CR>
