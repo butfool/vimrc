@@ -1,4 +1,7 @@
 unmap <space>
 
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
+nnoremap D "_d
+vnoremap D "_d
+
+" 删除到行尾
+nnoremap dL d$
