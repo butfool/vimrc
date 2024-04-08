@@ -5,6 +5,7 @@
 " Namespace: gv*
 nnoremap gvn :action VcsShowNextChangeMarker<CR>
 nnoremap gvp :action VcsShowPrevChangeMarker<CR>
+nnoremap gvt :action Vcs.ShowTabbedFileHistory<CR>
 
 " Description: 在定义中快速跳转
 " Namespace: g+
