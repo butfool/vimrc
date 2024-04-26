@@ -18,4 +18,4 @@ nnoremap tn gt
 nnoremap tp gT
 
 " For Idea Spec (BufferExplorer)
-nnoremap <leader>o :register<CR>
+" nnoremap <leader>o :register<CR>
