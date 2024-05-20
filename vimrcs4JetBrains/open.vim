@@ -13,4 +13,6 @@ nnoremap <leader>ou :<C-u>action FindUsages<CR>
 
 " Description: open functional popup tools
 " Namespace: <leader>t*
-nnoremap <leader>on :action CopyReference<CR>
+" nnoremap <leader>on :action CopyReference<CR>
+nnoremap <leader>on :action CopyReferencePopupGroup<CR>
+
