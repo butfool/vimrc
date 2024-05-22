@@ -15,7 +15,7 @@ find vimrcs -type f -name '*.vim' | sort | while read filename; do
 done
 echo '' >> ~/.vimrc
 find vimrcs4Extend -type f -name '*.vim' | sort | while read filename; do
-    echo "source ~/.vim_runtime/vimrcs4Extend/$filename" >> ~/.vimrc
+    echo "source ~/.vim_runtime/$filename" >> ~/.vimrc
 done
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
@@ -26,7 +26,8 @@ cp ~/.vimrc ~/.ideavimrc
 echo '
 " IntelliJ IDEA specific settings' >> ~/.ideavimrc
 find vimrcs4Jetbrains -type f -name '*.vim' | sort | while read filename; do
-    echo "source ~/.vim_runtime/vimrcs4Jetbrains/$filename" >> ~/.ideavimrc
+    echo $filename    
+    echo "source ~/.vim_runtime/$filename" >> ~/.ideavimrc
 done
 
 echo "Also configured the .ideavimrc for IntelliJ IDEA Vim plugin!"
