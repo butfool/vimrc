@@ -11,7 +11,7 @@ set runtimepath+=~/.vim_runtime' > ~/.vimrc
 
 # Automatically source all vim files in the vimrcs directory
 find vimrcs -type f -name '*.vim' | sort | while read filename; do
-    echo "source ~/.vim_runtime/vimrcs/$filename" >> ~/.vimrc
+    echo "source ~/.vim_runtime/$filename" >> ~/.vimrc
 done
 echo '' >> ~/.vimrc
 find vimrcs4Extend -type f -name '*.vim' | sort | while read filename; do
