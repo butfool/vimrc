@@ -10,9 +10,9 @@ nnoremap <leader>op :action ActivateProjectToolWindow<CR>
 nnoremap <leader>oc :action HideActiveWindow<CR>
 nnoremap <leader>or :<C-u>action RecentFiles<CR>
 nnoremap <leader>ou :<C-u>action FindUsages<CR>
+nnoremap <leader>of :<C-u>action RevealIn<CR>
 
 " Description: open functional popup tools
 " Namespace: <leader>t*
 " nnoremap <leader>on :action CopyReference<CR>
 nnoremap <leader>on :action CopyReferencePopupGroup<CR>
-

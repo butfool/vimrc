@@ -5,7 +5,7 @@
 " Namespace: gv*
 nnoremap gvn :action VcsShowNextChangeMarker<CR>
 nnoremap gvp :action VcsShowPrevChangeMarker<CR>
-nnoremap gvt :action Vcs.ShowTabbedFileHistory<CR>
+nnoremap gvh :action Vcs.ShowTabbedFileHistory<CR>
 
 " Description: 在定义中快速跳转
 " Namespace: g+
@@ -14,4 +14,9 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap gb :action Back<CR>
-" nnoremap gfp :action JumpToLastChange<CR>
+nnoremap gf :action Forward<CR>
+
+" Description: 在用法中快速跳转
+" Namespace: gu+
+nnoremap gun :action GotoNextElementUnderCaretUsage<CR>
+nnoremap gup :action GotoPrevElementUnderCaretUsage<CR>
