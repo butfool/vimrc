@@ -18,9 +18,16 @@ cat > ~/.vimrc <<EOF
 " Add your own customizations in ~/.vim_runtime/my_configs.vim
 
 set runtimepath+=~/.vim_runtime
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+source ~/.vim_runtime/vimrcs/customize.vim
+
 EOF
 
-append_sources "vimrcs" ~/.vimrc
+# append_sources "vimrcs" ~/.vimrc
 append_sources "vimrcs4Extend" ~/.vimrc
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
 
