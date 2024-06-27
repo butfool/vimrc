@@ -9,5 +9,4 @@ let g:WhichKey_FontSize = 24
 let g:WhichKey_ShowVimActions = "true"
 
 
-set quickscope
 
