@@ -11,6 +11,8 @@ nnoremap <leader>oc :action HideActiveWindow<CR>
 nnoremap <leader>or :<C-u>action RecentFiles<CR>
 nnoremap <leader>ou :<C-u>action FindUsages<CR>
 nnoremap <leader>of :<C-u>action RevealIn<CR>
+nnoremap <leader>os :<C-u>action ActivateStructureToolWindow<CR>
+
 
 " Description: open functional popup tools
 " Namespace: <leader>t*

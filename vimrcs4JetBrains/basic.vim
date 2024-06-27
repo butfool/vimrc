@@ -12,6 +12,7 @@ nnoremap <leader><leader>r :register<CR>
 noremap <leader>y "*y
 noremap <leader>p "*p
 noremap <leader>P "0p
+noremap <leader><space> :action SearchEverywhere<CR>
 
 " Tab Controll
 nnoremap tn gt
