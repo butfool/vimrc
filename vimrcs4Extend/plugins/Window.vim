@@ -1,4 +1,7 @@
 " Window Operations
+" Namespace: <leader>w*
+let g:WhichKeyDesc_WindowsOperations = "<leader>w Window Operations"
+
 nnoremap <leader>ww <C-W>w
 nnoremap <leader>wd <C-W>c
 nnoremap <leader>wj <C-W>j

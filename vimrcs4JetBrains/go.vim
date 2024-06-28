@@ -4,12 +4,15 @@
 " Description: 在 VCS 中快速跳转
 " Namespace: gv*
 nnoremap gvn :action VcsShowNextChangeMarker<CR>
+let g:WhichKeyDesc_VcsShowNextChangeMarker = "gvn Goto VCS Next"
 nnoremap gvp :action VcsShowPrevChangeMarker<CR>
+let g:WhichKeyDesc_VcsShowPrevChangeMarker = "gvp Goto VCS Previous"
 nnoremap gvh :action Vcs.ShowTabbedFileHistory<CR>
+let g:WhichKeyDesc_ShowTabbedFileHistory = "gvh Show File History"
 
 " Description: 在定义中快速跳转
 " Namespace: g+
-nnoremap gd :action GotoDeclaration<CR>
+" nnoremap gd :action GotoDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap ge :action GotoNextError<CR>
