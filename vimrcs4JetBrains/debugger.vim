@@ -1,16 +1,17 @@
 " Description: Debug Commands
 " Namespace: <leader>d*
+let g:WhichKeyDesc_DebuggerOperation = "<leader>d Debugger Operations"
 
 " debug operations
-nnoremap <leader>dd :<C-u>action StepOver<CR>
-nnoremap <leader>di :<C-u>action StepInto<CR>
-nnoremap <leader>do :<C-u>action StepOut<CR>
-nnoremap <leader>dr :<C-u>action Resume<CR>
-nnoremap <leader>dh :<C-u>action RunToCursor<CR>
-nnoremap <leader>dq :<C-u>action Resume<CR>
+nnoremap <leader>di :action StepInto<CR>
+nnoremap <leader>do :action StepOut<CR>
+nnoremap <leader>dd :action StepOver<CR>
+nnoremap <leader>dh :action RunToCursor<CR>
 
+nnoremap <leader>dr :action Resume<CR>
+nnoremap <leader>dq :action Resume<CR>
 
 " debug tools
-vnoremap <leader>de :<C-u>action EvaluateExpression<CR>
-nnoremap <leader>de :<C-u>action EvaluateExpression<CR>
+vnoremap <leader>de :action EvaluateExpression<CR>
+nnoremap <leader>de :action EvaluateExpression<CR>
 
