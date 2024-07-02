@@ -8,10 +8,10 @@ nnoremap <leader>oa :action Annotate<CR>
 nnoremap <leader>ot :action ActivateTODOToolWindow<CR>
 nnoremap <leader>op :action ActivateProjectToolWindow<CR>
 nnoremap <leader>oc :action HideActiveWindow<CR>
-nnoremap <leader>or :<C-u>action RecentFiles<CR>
-nnoremap <leader>ou :<C-u>action FindUsages<CR>
-nnoremap <leader>of :<C-u>action RevealIn<CR>
-nnoremap <leader>os :<C-u>action ActivateStructureToolWindow<CR>
+nnoremap <leader>or :action RecentFiles<CR>
+nnoremap <leader>ou :action FindUsages<CR>
+nnoremap <leader>of :action RevealIn<CR>
+nnoremap <leader>os :action ActivateStructureToolWindow<CR>
 
 
 " Description: open functional popup tools

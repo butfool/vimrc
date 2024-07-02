@@ -1,5 +1,6 @@
 " Description: NERDTree
 " Namespace: <leader>n*
+let g:WhichKeyDesc_NERDTree = "<leader>n NerdTree"
 
 " 常用操作
 " I 显示隐藏文件
@@ -16,5 +17,10 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 
 map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<cr>
+let g:WhichKeyDesc_NERDTreeToggle = "<leader>nn Open Files Tree"
+
+" map <leader>nb :NERDTreeFromBookmark<cr>
+" let g:WhichKeyDesc_NERDTreeFromBookmark = "<leader>nb Open Bookmark"
+
 map <leader>nf :NERDTreeFind<cr>
+let g:WhichKeyDesc_NERDTreeFind = "<leader>nf Locate Current File"
