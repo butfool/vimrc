@@ -5,8 +5,8 @@ append_sources() {
     local target_file=$2
     local base_dir=~/.vim_runtime
 
-    find "${base_dir}/${source_dir}" -type f -name '*.vim' | sort | while read filename; do
-        echo "source $filename" >> "${target_file}"
+    find "${base_dir}/${source_dir}" \( -name '*.vim' -o -name '*.lua' \) | sort | while read filename; do
+      echo "source $filename" >> "${target_file}"
     done
     echo '' >> "${target_file}"
 }
@@ -31,8 +31,18 @@ EOF
 append_sources "vimrcs4Extend" ~/.vimrc
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
 
+# add config to .gvimrc
+cp ~/.vimrc ~/.config/nvim/init.vim
+#echo > "${HOME}/.config/nvim/init.lua"
+
+echo "if exists(\"g:neovide\")" >> ~/.config/nvim/init.vim
+  append_sources "vimrcs4NeoVide" ~/.config/nvim/init.vim
+echo "endif" >> ~/.config/nvim/init.vim
+echo "Configure for NeoVim"
+
 cp ~/.vimrc ~/.ideavimrc
 echo '
 " IntelliJ IDEA specific settings' >> ~/.ideavimrc
 append_sources "vimrcs4Jetbrains" ~/.ideavimrc
 echo "Also configured the .ideavimrc for IntelliJ IDEA Vim plugin!"
+
