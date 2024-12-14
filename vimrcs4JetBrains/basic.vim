@@ -20,3 +20,4 @@ nnoremap tp gT
 
 " For Idea Spec (BufferExplorer)
 " nnoremap <leader>o :register<CR>
+:set keep-english-in-normal-and-restore-in-insert
