@@ -11,7 +11,10 @@ nnoremap <leader>oc :action HideActiveWindow<CR>
 nnoremap <leader>or :action RecentFiles<CR>
 nnoremap <leader>ou :action FindUsages<CR>
 nnoremap <leader>of :action RevealIn<CR>
+nnoremap <leader>ov :action OpenInAssociatedApplication<CR>
 nnoremap <leader>os :action ActivateStructureToolWindow<CR>
+nnoremap <leader>og :action ActivateCommitToolWindow<CR>
+nnoremap <leader>oh :action ActivateVersionControlToolWindow<CR>
 
 
 " Description: open functional popup tools
